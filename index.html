@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+  <header>
+    <div class="user">
+        <img src="leeluu.jpg" width=200 height="200" >
+        <h3 class="name">Leelavathy.L</h3>
+        <p class="post">front end developer</p>
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="#about"><i class="fas fa-user"></i>About</a></li>
+            <li><a href="#education"><i class="fas fa-user-graduate"></i>Education</a></li>
+            <li><a href="#portfolio"><i class="fas fa-briefcase"></i>Portfolio</a></li>
+            <li><a href="#contact"><i class="fas fa-address-book"></i>Contact</a></li>
+        </ul>
+   </nav>
+  </header>
+
+  <div class="container">
+    <section class="home" id="home">
+        <h3>hi there...</h3>
+        <h3 class="name"> my name is <span>Leelavathy</span></h3>  
+        <h3 class="post">i am a <span class="typing-text">  front end developer</span></h3>
+        <a href="#"><button class="btn">hire me</button></a>
+    <div class="share">
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-github "></a>
+        <a href="#" class="fab  fa-whatsapp "></a>
+    </div>    
+</section>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+  <script>
+    var type=new Typed('.typing-text',{
+        strings:['web designer','front end developer','graphic designer','photographer'],
+        typeSpeed:120,
+        loop:true});
+        let themeColor=document.querySelectorAll('.theme-toggler span');
+        themeColor.forEach(color=> color.addEventListener('click',()=>{
+            let background=color.style.background;
+            document.querySelector('body').style.background=background;
+        }))
+  </script>
+
+    <section class="about" id="about">
+        <h1 class="heading">About me</h1>
+        <div clas="content">
+            <h1 style="font-size:medium; color:aliceblue;">I have technical skills as well as excellent interpersonal skills, enabling me to 
+                interact with a wide range of clients.  I am eager to be challenged in order to grow further 
+                improve my skills.My greatest passion is in life is using my technical know-how to benefit other 
+                people and organisations.</h1>
+
+    <a href="file:///D:/HTML & CSS/PortfolioProfile/Leelavathy.L-CV.pdf"><button class="btn">View CV</button></a>
+        </div>
+        <h1 class="heading">My skills</h1>
+
+        <div class="skills">
+            <div class="progress">
+                <h3>html<span>75%</span></h3>
+                <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+                <h3>css<span>75%</span></h3>
+                <div class="bar"><span></span></div>
+                </div>
+
+                <div class="progress">
+                    <h3>c<span>70%</span></h3>
+                    <div class="bar"><span></span></div>
+                    </div>
+
+                    <div class="progress">
+                        <h3>c++<span>70%</span></h3>
+                        <div class="bar"><span></span></div>
+                        </div>
+
+        </div>
+    </section>
+
+<section class="education" id="education">
+<h1 class="heading">My education</h1>
+<div class="box-container">
+  <div class="box">
+      <div class="year"> 2019-2022</div>
+      <h2>Bsc Computer Science (Bsc CS)</h2>
+      <p> PSGR Krishnammal College for Women</p>
+      <h4>83%</h4>
+  </div>
+  <div class="box">
+    <div class="year"> 2018-2019</div>
+    <h2>Higher Secondary Education (HSC)</h2>
+    <p> PSGR Krishnammal Higher Secondary School for Girls</p>
+    <h4>84%</h4>
+  </div>
+  <div class="box">
+    <div class="year"> 2016-2017</div>
+    <h2>Secondary School Leaving Certificate (SSLC)</h2>
+    <p> RC Govt Girls Higher Secondary School</p>
+    <h4>98.4%</h4>
+</div>
+</div>
+</section>
+
+<section class="portfolio" id="portfolio">
+    <h1 class="heading">Portfolio</h1>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="img1.jpg" width="100%" height="100%">
+            <h3> Project 1</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-link"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-search"></a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="img2.jpg" width="100%" height="100%">
+            <h3> Project 2</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-link"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-search"></a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="img3.jpg" width="100%" height="100%">
+            <h3> Project 3</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-link"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-search"></a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="img4.jpg" width="100%" height="100%">
+            <h3> Project 4</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-link"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-search"></a>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h1 class="heading">contact me</h1>
+    <div class="row">
+        <form action="">
+            <input type="text" class="box" placeholder="first name">
+            <input type="text" class="box" placeholder="last name">
+            <input type="email" class="box" placeholder="your email">
+            <input type="text" class="box" placeholder="your project">
+            <textarea name=""id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+     <input type="submit" value="message" class="btn">
+        </form>
+<div class="content">
+    <div class="icons">
+        <h3><i class="fas fa-map-marker-alt"></i>address</h3>
+        <h2> 6/1, Sri Kamachi Nagar, Ondipudur, Coimbatore-641016</h2>
+    </div>
+    <div class="icons">
+        <h3><i class="fas fa-envelope"></i>email</h3>
+        <h2>leelalakshmanan12@gmail.com</h2>
+    </div>
+    <div class="icons">
+        <h3><i class="fas fa-phone"></i>phone</h3>
+        <h2> +91 9344007826</h2>
+    </div>
+</div>
+    </div>
+</section>
+
+    </body>
+</html>
